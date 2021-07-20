@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "fd353cbd-a96e-4fc2-9a01-2acbbdb57d50",
+		"name": "Ecommerce CRUD/AUTH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3000/product/products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find a product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3000/product/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Pot",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Used for cooking the dish",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "pot.jpg",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "3000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:3000/product/add-product",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"add-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit the details of a product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Fork",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Used for picking",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "fork.jpg",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:3000/product/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3000/product/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get list of users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3000/user/list",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup a user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "omatsolaswnd@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "fullName",
+							"value": "Danie Lisa",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "java",
+							"type": "text"
+						},
+						{
+							"key": "confirmPassword",
+							"value": "java",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:3000/user/signup",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login a User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "omatsolaswnd@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "java",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:3000/user/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
