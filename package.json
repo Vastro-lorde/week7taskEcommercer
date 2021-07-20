@@ -1,0 +1,31 @@
+{
+  "name": "ecommerceweek7signup",
+  "version": "1.0.0",
+  "description": "ICT-YEP week 7 weekly task.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "CRUD",
+    "authentication",
+    "user",
+    "signup",
+    "signin",
+    "ExpressJs",
+    "NodeJs"
+  ],
+  "author": "Seun Daniel Omatsola",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
